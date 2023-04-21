@@ -484,6 +484,7 @@ h1, h2, h3, h4 {
 
 .intro-info h3{
   color: var(--primary-medium);
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1065px) {
