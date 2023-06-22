@@ -458,6 +458,7 @@ h1, h2, h3, h4 {
 
 @media (min-width: 1065px) {
   #hero .intro-info {
+    /* text-align: center; */
     padding-top: 80px;
   }
 }
@@ -940,10 +941,34 @@ h1, h2, h3, h4 {
 
 #eboard .eboard-img figure{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#eboard .eboard-img figure img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 #eboard .member-img {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  /* height: 100%; */
+}
+
+#eboard .eboard-img figure img.member-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 #eboard .eboard-item{
@@ -951,6 +976,8 @@ h1, h2, h3, h4 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
+  max-width: 150px;
+  margin: 0 1rem;
 /*  padding-bottom: 0.5rem;*/
 }
 
@@ -1083,19 +1110,18 @@ h1, h2, h3, h4 {
   color: var(--primary-medium);
 }
 #eboard .popup .content {
-  max-height: 30%;
+  max-height: 70%;
   overflow: auto;
   text-align: center;
   padding-bottom: 10px;
   z-index: 99;
 }
 
-#eboard @media screen and (max-width: 500px){
-
-   .box{
+@media screen and (max-width: 500px) {
+  #eboard .box {
     width: 100%;
   }
-   .popup{
+  #eboard .popup {
     width: 90%;
   }
 }
