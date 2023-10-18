@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
   position: relative;
   color: var(--primary-dark);
   padding: 10px 15px;
-  transition: 0.2s;
+  transition: 0.3s;
   font-size: 14px;
   font-family: var(--font-body);
   text-transform: uppercase;
